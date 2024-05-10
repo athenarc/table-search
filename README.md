@@ -15,6 +15,8 @@ Each script requires specific input parameters which determine how each indexing
 Note: Our code and study focus on using multiple columns and union table search as a use case, following the approaches detailed in the Starmie project.
 
 ## Enhancements and Modifications
+### Code
+The code files in this repository are primarily based on the Starmie project. Some files have been directly replicated with no changes, e.g., `lsh.py`, while others have been modified or expanded upon to better suit our specific needs like `test_hnsw_search.py`. Additionally, there are completely new files that have been created to complement the existing functionalities and address new use cases such as `diskann.py`.
 ### HNSW and DiskANN
 We have added new functionalities to both HNSW and DiskANN methods to assist with their implementation:
 - **HNSW Enhancements**: Find the modifications at [this GitHub pull request](https://github.com/nmslib/hnswlib/pull/536).
