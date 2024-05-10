@@ -19,7 +19,7 @@ Note: Our code and study focus on using multiple columns and union table search 
 We have added new functionalities to both HNSW and DiskANN methods to assist with their implementation:
 - **HNSW Enhancements**: Find the modifications at [this GitHub pull request](https://github.com/nmslib/hnswlib/pull/536).
 - **DiskANN Enhancements**: Instructions to add helper functionalities to check the internal structure of the index graph:
-  1. Navigate to `src/index.cpp`.
+  1. Navigate to `src/index.cpp` which can be found [online](https://github.com/microsoft/DiskANN/blob/main/src/index.cpp).
   2. Locate and modify the `save_graph` function as follows:
 
      ```cpp
