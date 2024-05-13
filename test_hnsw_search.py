@@ -1,10 +1,28 @@
-import pickle
-import mlflow
+# Copyright (c) 2023-2024 G. Fan, J. Wang, Y. Li, D. Zhang, and R. J. Miller
+# 
+# This file is derived from Starmie hosted at https://github.com/megagonlabs/starmie
+# and originally licensed under the BSD-3 Clause License. Modifications to the original
+# source code have been made by I. Taha, M. Lissandrini, A. Simitsis, and Y. Ioannidis, and
+# can be viewed at https://github.com/athenarc/table-search.
+#
+# This work is licensed under the GNU Affero General Public License v3.0,
+# unless otherwise explicitly stated. See the https://github.com/athenarc/table-search/blob/main/LICENSE
+# for more details.
+#
+# You may use, modify, and distribute this file in accordance with the terms of the
+# GNU Affero General Public License v3.0.
+
+# This file has been modified
+
 import argparse
+import pickle
 import time
+
+import mlflow
 import numpy as np
+
+from checkPrecisionRecall import calcMetrics, saveDictionaryAsPickleFile
 from hnsw_search import HNSWSearcher
-from checkPrecisionRecall import saveDictionaryAsPickleFile, calcMetrics
 
 #from memory_profiler import profile
 
