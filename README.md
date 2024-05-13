@@ -47,6 +47,11 @@ We have added new functionalities to both HNSW and DiskANN methods to assist wit
      ```
   3. Replace `"file_name"` with your desired output file path, for example, `"/diskann_internal_structure.txt"`.
 
+## Notes
+
+1. The `requirements.txt` file contains the necessary libraries for all the indexing techniques to work. To use the `run_pretrain.py` and `extractVectors.py` files with the most efficient performance, one can install the latest versions of these libraries.
+2. To help organize the project, we created an empty `data` directory. Inside it, we added nested empty directories using the SANTOS-S dataset as an example to show how the table files (datalake and query) and vectors are structured in the project.
+
 ## Citation
 If you are using the code in this repo, please cite the following paper:
 
